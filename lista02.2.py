@@ -35,9 +35,9 @@ class bicicleta:
         elif self.velocidade_atual == 0:
             print("A bicicleta já atingiu sua velocidade mínima!")
     def calibrar_pneu(self, calibre):
-        if (0 <= self.calibragem_pneus <= 30) and (
+        if (0 <= calibre <= 30) and (
                 self.velocidade_atual == 0):
-            self.calibragem = calibre
+            self.calibragem_pneus = calibre
             print(f"Pneus calibrados: {self.calibragem_pneus} libras")
         elif calibre > 30:
             print("Seu pneu vai explodir, calibragem impossibilitada")
@@ -68,4 +68,4 @@ minha_bicicleta.pedalar()
 minha_bicicleta.pedalar()
 minha_bicicleta.frear()
 minha_bicicleta.parar()
-minha_bicicleta.calibrar_pneu(27)
+minha_bicicleta.calibrar_pneu(30)
